@@ -1,0 +1,2 @@
+pyrogram # main framework
+tgcrypto # optional
