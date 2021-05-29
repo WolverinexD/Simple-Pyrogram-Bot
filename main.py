@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import Client, filters
 
 BOT_TOKEN = # your bot token from telegram.me/BotFather. Sample :- "12345:abcdefghijklmnop"
 API_ID = # your api id from my.telegram.org. Sample :- int("123456")
@@ -11,7 +11,7 @@ FayasNoushad = Client(
     api_hash=API_HASH
 )
 
-@FayasNoushad.on_message()
+@FayasNoushad.on_message(filters.command(["start"]))
 async def start(bot, update):
     await update.reply_text(
         text=f"Hi {update.from_user.mention}"
