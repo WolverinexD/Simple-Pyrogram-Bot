@@ -11,4 +11,10 @@ FayasNoushad = Client(
     api_hash=API_HASH
 )
 
+@FayasNoushad.on_message()
+async def start(bot, update):
+    await update.reply_text(
+        text=f"Hi {update.from_user.mention}"
+    )
+
 FayasNoushad.run()
