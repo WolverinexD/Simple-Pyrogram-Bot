@@ -1,1 +1,1 @@
-python-3.9.5 # from https://www.python.org/doc/versions/
+python-3.9.6 # from https://www.python.org/doc/versions/
